@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+    </head>
+    <body>
+        <div id="lottie-animation" style="width: 300px; height: 300px"></div>
+
+        <script>
+            var animation = lottie.loadAnimation({
+                container: document.getElementById('lottie-animation'), // 애니메이션을 삽입할 div의 ID
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: './dist/js/data.json', // JSON 파일의 경로
+            })
+        </script>
+    </body>
+</html>
